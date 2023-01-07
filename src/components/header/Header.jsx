@@ -9,6 +9,8 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
+
 
 // components
 import Logo from "../logo/Logo";
@@ -94,37 +96,13 @@ export default function Header() {
                             </Search>
                         </Item>
                     </Grid>
-                    <Grid item xs>
+                    <Grid item xs={3}>
                         <Item>
-                            <Grid container spacing={3}>
-                                <Grid item xs={3}>
-                                    <Item>
-                                        <Button
-                                            variant="text"
-                                            sx={{ color: "white" }}
-                                        >
-                                            Home
-                                        </Button>
-                                    </Item>
-                                </Grid>
-                                <Grid item xs={5}>
-                                    <Item>
-                                        <Button
-                                            variant="text"
-                                            sx={{ color: "white" }}
-                                        >
-                                            Activity
-                                        </Button>
-                                    </Item>
-                                </Grid>
-                                <Grid item xs={3}>
-                                    <Item>
-                                        <Button variant="contained">
-                                            EXPLORE
-                                        </Button>
-                                    </Item>
-                                </Grid>
-                            </Grid>
+                            <Stack direction="row">
+                                <Button variant="text" sx={{ color: "white" }}>Home</Button>
+                                <Button variant="text" sx={{ color: "white" }}>Activity</Button>
+                                <Button variant="contained">EXPLORE</Button>
+                            </Stack>
                         </Item>
                     </Grid>
                 </Grid>

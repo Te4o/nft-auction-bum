@@ -5,7 +5,8 @@ import styles from "./Example.module.scss";
 import classNames from "classnames";
 
 //import Logo from "../logo/Logo";
-import Header from "../header/Header";
+//import Header from "../header/Header";
+import Avatar from "../avatar/Avatar";
 
 export default function Copyright() {
     return (
@@ -17,7 +18,12 @@ export default function Copyright() {
                     </Link>
                     <Logo type="muted"></Logo>
                 </Paper> */}
-                <Header></Header>
+                {/* <Header></Header> */}
+                <Avatar
+                    url={"../images/avatar.png"}
+                    size={200}
+                    verified={true}
+                />
             </Container>
         </div>
     );

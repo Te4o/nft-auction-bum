@@ -7,6 +7,7 @@ import classNames from "classnames";
 //import Trending from "../trending/Trending";
 import Auctions from "../auctions/Auctions";
 import Card from "../card/Card";
+import Footer from "../footer/Footer";
 
 export default function Copyright() {
     const _cards = [
@@ -98,6 +99,7 @@ export default function Copyright() {
                     currency={card.currency}
                     timeLeft={card.timeLeft}
                 /> */}
+                <Footer />
             </Container>
         </div>
     );
